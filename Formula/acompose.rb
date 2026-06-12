@@ -5,21 +5,21 @@
 class Acompose < Formula
   desc "Run your docker-compose.yml on Apple's container CLI"
   homepage "https://acompose.pages.dev"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/htlin222/acompose/releases/download/v0.1.4/acompose_0.1.4_darwin_amd64.tar.gz"
-      sha256 "e92fb514aed0835276cedc0682fab49ed4d2679c91f41e40ff3afe6b96b6979f"
+      url "https://github.com/htlin222/acompose/releases/download/v0.1.5/acompose_0.1.5_darwin_amd64.tar.gz"
+      sha256 "d8e1cf47550154f3dc09012e551d87b87a21e5b7265b09a1c303fac43e7dc42e"
 
       define_method(:install) do
         bin.install "acompose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/htlin222/acompose/releases/download/v0.1.4/acompose_0.1.4_darwin_arm64.tar.gz"
-      sha256 "b592374c80e836a681cb70746f2bfb232d44dcdcb738f021ff458e996f070a5c"
+      url "https://github.com/htlin222/acompose/releases/download/v0.1.5/acompose_0.1.5_darwin_arm64.tar.gz"
+      sha256 "733589ac40e1976b3ad0278de7cd062ecd8735cda36ab345640b900d71b4a9b6"
 
       define_method(:install) do
         bin.install "acompose"
@@ -29,15 +29,15 @@ class Acompose < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/htlin222/acompose/releases/download/v0.1.4/acompose_0.1.4_linux_amd64.tar.gz"
-      sha256 "1fed51bd2118b3d339b928ebfaddd7bd7ce856cf408154e79462b72e80fe40a4"
+      url "https://github.com/htlin222/acompose/releases/download/v0.1.5/acompose_0.1.5_linux_amd64.tar.gz"
+      sha256 "621fc83f19544813c5cab94db977a9ed84085cbfd9bcf0a37a441fb4ef5d3eb7"
       define_method(:install) do
         bin.install "acompose"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/htlin222/acompose/releases/download/v0.1.4/acompose_0.1.4_linux_arm64.tar.gz"
-      sha256 "1c5ffac6c9f42b4e89cc9dc62a825d4db3dec539714f4c0bb8d3867e7d27c898"
+      url "https://github.com/htlin222/acompose/releases/download/v0.1.5/acompose_0.1.5_linux_arm64.tar.gz"
+      sha256 "1ff0b0640af409bac0d4b5e724e9bf180e969e03c8ec57aaadae7f0164b5b2b0"
       define_method(:install) do
         bin.install "acompose"
       end
